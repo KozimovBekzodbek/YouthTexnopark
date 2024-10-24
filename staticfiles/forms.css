@@ -1,0 +1,61 @@
+body{
+    background: #F6F7F8;
+}
+#forms{
+    padding: 20px 0;
+}
+#forms .title{
+    box-shadow: 0px 0px 10px 0px #00000040;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#forms .title::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-span);
+    width: 10px;
+    height: 100%;
+}
+
+
+#forms .title h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #100022;
+}
+
+#forms .form-card{
+    box-shadow: 0px 0px 10px 0px #00000040;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+#forms .form-card h4{
+    margin-bottom: 20px;
+}
+
+#forms .form-card:not(.gender, .skill) input{
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    border: 0;
+    border-bottom: 1px solid #100022;
+    
+    
+    margin-bottom: 20px;
+}
+
+#forms .form-card label{
+    margin-bottom: 10px;
+}
+

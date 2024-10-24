@@ -1,0 +1,576 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/static/images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <ul class="d-lg-flex">
+                    <li><a href="#">Asosiy</a></li>
+                    <li><a href="#section-1">Xizmatlar</a></li>
+                    <li><a href="#main">Yangiliklar</a></li>
+                    <li><a href="#section-3">Biz haqimizda</a></li>
+                    <li><a href="#main-2">Tanlov</a></li>
+                    <li><a href="#footer">Aloqa</a></li>
+                    <a href="#" class="logo-res d-lg-none">
+                        <img src="/static/images/logo.svg" alt="logo">
+                    </a>
+                    <!-- closer -->
+                    <i class="lni lni-close d-lg-none times fs-1"></i>
+                </ul>
+                <div class="d-flex align-items-center gap-4">
+                    <!-- day and light -->
+                    <div class="mode">
+                        <i class="lni lni-sun fs-1"></i>
+                    </div>
+                    <!-- opener -->
+                    <div class="opener d-lg-none">
+                        <i class="lni lni-menu fs-1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <!-- row -->
+            <div class="row align-items-center">
+                <!-- left-side -->
+                <div class="col-12 col-xl-6">
+                    <div class="left-side mb-5 pb-5 mb-xl-0 pb-xl-0">
+                        <h3> <span>Innovatsiyalar</span> va <span>innovatorlarni</span> ishlab chiqaruvchi maydon </h3>
+                        <a href="{% url 'common:forms' %}" class="my-button">So‘rov qoldiring</a>
+                    </div>
+                </div>
+                <!-- right-side -->
+                <div class="d-none d-xl-block col-12 col-xl-6">
+                    <div class="right-side">
+                        <img src="/static/images/header-1.png" alt="header-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Inkubator -->
+    <div id="inkubator" class="py-5 mb-5">
+        <div class="container">
+            <!-- title -->
+            <h2>innox biznes inkubatori</h2>
+            <!-- row -->
+            <div class="row align-items-center">
+                <!-- left-side -->
+                <div class="col-12 col-lg-6">
+                    <div class="left-side mb-5 mb-lg-0">
+                        <img class="w-100" src="static/images/Inkubator.png" alt="Biznes-inkubator" title="Biznes Inkubator">
+                    </div>
+                </div>
+                <!-- right-side -->
+                <div class="col-12 col-lg-6">
+                    <div class="right-side">
+                        <p>"InnoX" - innovatsion gʻoyalarga ega boʻlgan yoshlarning startap gʻoyalari (loyihalari)ni
+                            oʻquv dasturlari va mutaxassis tavsiyalari orqali qoʻllab-quvvatlash, grant tanlovlarga
+                            yo'naltirishga qaratilgan dastur.</p>
+                        <ul>
+                            <li>
+                                Davomiyligi: <span>4 oy</span>
+                            </li>
+                            <li>
+                                Dars davomiyligi: <span>Haftada 3 kun, 2 soatdan</span>
+                            </li>
+                            <li>
+                                Dars kunlari: <span>Dushanba, chorshanba, juma</span>
+                            </li>
+                            <li>
+                                Yosh chegarasi: <span>18-40 yosh oralig‘i</span>
+                            </li>
+                            <li>
+                                Talab: <span> Iqtisodiyot tarmoqlari va jtimoiy sohaning muammolari yechimiga qaratilgan
+                                    gʻoya va loyihasi bo'lishi</span>
+                            </li>
+                        </ul>
+                        <p class="second-p">O'quv mashg'ulotlari davomida, ishtirokchilarga tajribali mentorlar tomonidan startap bilan bevosita ishlash uchun zarur bilim va ko'nikmalar beriladi.</p>
+                        <a href="{% url 'common:forms' %}" class="my-button">Ro‘yxatdan o‘tish</a>
+                        <!-- link to here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-1 -->
+    <section id="section-1">
+        <div class="container">
+            <!-- row -->
+            <div class="row align-items-center">
+                <!-- 1 left-side -->
+                <div class="col-12 col-xl-6">
+                    <div class="left-side">
+                        <h3>Faoliyat <br> <span>yo‘nalishlari</span></h3>
+                        <p>O‘zingizga kerak bo‘lgan faoliyat <br> yo‘nalishini tanlang.</p>
+                        <!-- box 1 -->
+                        <div class="box">
+                            <img src="/static/images/section-1-1.png" alt="section-1-1">
+                            <div class="text">
+                                <span>1-yo‘nalish</span>
+                                <h3>Innovatsion startap loyiha va g‘oyalarni rivojlantirish</h3>
+                                <a href="#" class="d-flex align-items-center gap-1">
+                                    <span>
+                                        Batafsil
+                                    </span>
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <!-- box 2 -->
+                        <div class="box">
+                            <img src="/static/images/section-1-2.png" alt="section-1-1">
+                            <div class="text">
+                                <span>2-yo‘nalish</span>
+                                <h3>Yoshlarga Axborot texnologiyalari sohasi bo‘yicha ta’lim berish</h3>
+                                <a href="#" class="d-flex align-items-center gap-1">
+                                    <span>
+                                        Batafsil
+                                    </span>
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <!-- box 3 -->
+                        <div class="box">
+                            <img src="/static/images/section-1-3.png" alt="section-1-1">
+                            <div class="text">
+                                <span>3-yo‘nalish</span>
+                                <h3>raqamli texnologiyalar sohasi bo‘yicha xizmat ko‘rsatish</h3>
+                                <a href="#" class="d-flex align-items-center gap-1">
+                                    <span>
+                                        Batafsil
+                                    </span>
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <!-- box 4 -->
+                        <div class="box">
+                            <img src="/static/images/section-1-4.png" alt="section-1-1">
+                            <div class="text">
+                                <span>4-yo‘nalish</span>
+                                <h3>metall va nometall hom ashyolariga qaytaishlov berish xizmatlari</h3>
+                                <a href="#" class="d-flex align-items-center gap-1">
+                                    <span>
+                                        Batafsil
+                                    </span>
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 right-side -->
+                <div class="col-12 col-xl-6 d-none d-xl-block">
+                    <div class="right-side">
+                        <img src="/static/images/header-1.png" alt="header-1 on section-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-2 -->
+    <section id="section-2">
+        <div class="container">
+            <!-- row -->
+            <div class="row align-items-center">
+                <!-- 1 -->
+                <div class="col-12 col-lg-6">
+                    <!-- left-side -->
+                    <div class="left-side">
+                        <h3>
+                            <span>Bepul sinov</span> <br>
+                            darsiga yoziling!
+                        </h3>
+                        <p>Bepul sinov darsiga yoziling, va <br> o‘zingizga mos sohani tanlang.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-12 col-lg-6">
+                    <!-- right-side -->
+                    <div class="right-side text-start text-lg-end">
+                        <div class="text">
+                            <h3>0 so‘m </h3>
+                            <p> Bepul sinov darsi uchun </p>
+                        </div>
+                        <a href="#main-2" class="my-button">So‘rov qoldiring</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main -->
+    <main id="main">
+        <div class="container">
+            <div class="main-content">
+                <!-- title -->
+                <h2>Texnoparkdagi <br> <span> so‘nggi yangiliklar</span> </h2>
+                <!-- row -->
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="/static/images/main-1.png" alt="main-1">
+                            <div class="text">
+                                <div>
+                                    <span>10:09 10.06.2024</span>
+                                    <p>Diam non sagittis et sem augue suspendisse porttitor risus. Aenean arcu congue
+                                        ultricies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="/static/images/main-1.png" alt="main-1">
+                            <div class="text">
+                                <div>
+                                    <span>10:09 10.06.2024</span>
+                                    <p>Diam non sagittis et sem augue suspendisse porttitor risus. Aenean arcu congue
+                                        ultricies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="/static/images/main-1.png" alt="main-1">
+                            <div class="text">
+                                <div>
+                                    <span>10:09 10.06.2024</span>
+                                    <p>Diam non sagittis et sem augue suspendisse porttitor risus. Aenean arcu congue
+                                        ultricies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="/static/images/main-1.png" alt="main-1">
+                            <div class="text">
+                                <div>
+                                    <span>10:09 10.06.2024</span>
+                                    <p>Diam non sagittis et sem augue suspendisse porttitor risus. Aenean arcu congue
+                                        ultricies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="/static/images/main-1.png" alt="main-1">
+                            <div class="text">
+                                <div>
+                                    <span>10:09 10.06.2024</span>
+                                    <p>Diam non sagittis et sem augue suspendisse porttitor risus. Aenean arcu congue
+                                        ultricies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="/static/images/main-1.png" alt="main-1">
+                            <div class="text">
+                                <div>
+                                    <span>10:09 10.06.2024</span>
+                                    <p>Diam non sagittis et sem augue suspendisse porttitor risus. Aenean arcu congue
+                                        ultricies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- section-3 -->
+    <section id="section-3">
+        <div class="container">
+            <div class="section-content">
+                <h2>nega aynan<br><span>texnopark?</span></h2>
+                <!-- row -->
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- box -->
+                        <div class="box">
+                            <img width="50px" src="static/images/icon-1.png" alt="icon-1" class="icon">
+                            <h3>Farzandingizga mos soha</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec pellentesque. </p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- box -->
+                        <div class="box">
+                            <img width="50px" src="static/images/icon-1.png" alt="icon-1" class="icon">
+                            <h3>Farzandingizga mos soha</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec pellentesque. </p>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- box -->
+                        <div class="box">
+                            <img width="50px" src="static/images/icon-1.png" alt="icon-1" class="icon">
+                            <h3>Farzandingizga mos soha</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec pellentesque. </p>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- box -->
+                        <div class="box">
+                            <img width="50px" src="static/images/icon-1.png" alt="icon-1" class="icon">
+                            <h3>Farzandingizga mos soha</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec pellentesque. </p>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- box -->
+                        <div class="box">
+                            <img width="50px" src="static/images/icon-1.png" alt="icon-1" class="icon">
+                            <h3>Farzandingizga mos soha</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec pellentesque. </p>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- box -->
+                        <div class="box">
+                            <img width="50px" src="static/images/icon-1.png" alt="icon-1" class="icon">
+                            <h3>Farzandingizga mos soha</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec pellentesque. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-4 -->
+    <section id="section-4">
+        <div class="container">
+            <!-- content -->
+            <div class="section-content">
+                <!-- title -->
+                <h2>Bizning <span>jamoa</span></h2>
+                <!-- row -->
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <!-- box -->
+                        <div class="box">
+                            <img src="/static/images/section-4-1.png" alt="section-4">
+                            <div class="text">
+                                <div>
+                                    <h4>Shukhrat aliyev</h4>
+                                    <span>Graphic and UI/UX designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <!-- box -->
+                        <div class="box">
+                            <img src="/static/images/section-4-1.png" alt="section-4">
+                            <div class="text">
+                                <div>
+                                    <h4>Shukhrat aliyev</h4>
+                                    <span>Graphic and UI/UX designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <!-- box -->
+                        <div class="box">
+                            <img src="/static/images/section-4-1.png" alt="section-4">
+                            <div class="text">
+                                <div>
+                                    <h4>Shukhrat aliyev</h4>
+                                    <span>Graphic and UI/UX designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <!-- box -->
+                        <div class="box">
+                            <img src="/static/images/section-4-1.png" alt="section-4">
+                            <div class="text">
+                                <div>
+                                    <h4>Shukhrat aliyev</h4>
+                                    <span>Graphic and UI/UX designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-5 -->
+    <section id="section-5">
+        <div class="container">
+            <div class="section-content">
+                <h2>O‘quvchilarimiz <span>ishlari</span></h2>
+                <p>Biz qanchalik sifatli ta’lim berishimiz va ishonchliligimizni <br> bilmoqchi bo‘lsangiz,
+                    o‘quvchilarimiz
+                    ishlariga qarang!</p>
+                <!-- Carousel -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper mb-5 py-4">
+                        <!-- 1 -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="static/images/section-5-1.png" alt="section-5-1">
+                                <div class="card-body">
+                                    <h3>Online Marketplace</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ut dolor
+                                        accusantium, id molestias placeat.</p>
+                                    <a href="#" class="my-button">Batafsil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="static/images/section-5-1.png" alt="section-5-1">
+                                <div class="card-body">
+                                    <h3>Online Marketplace</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ut dolor
+                                        accusantium, id molestias placeat.</p>
+                                    <a href="#" class="my-button">Batafsil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="static/images/section-5-1.png" alt="section-5-1">
+                                <div class="card-body">
+                                    <h3>Online Marketplace</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ut dolor
+                                        accusantium, id molestias placeat.</p>
+                                    <a href="#" class="my-button">Batafsil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="static/images/section-5-1.png" alt="section-5-1">
+                                <div class="card-body">
+                                    <h3>Online Marketplace</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ut dolor
+                                        accusantium, id molestias placeat.</p>
+                                    <a href="#" class="my-button">Batafsil</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-6 -->
+    <section id="main-2">
+        <div class="container">
+            <!-- row -->
+            <div class="row align-items-center">
+                <!-- left-side -->
+                <div class="col-12 col-xl-8">
+                    <div class="left-side mb-5 mb-xl-0">
+                        <h2><span>Imtiyozlaringizni</span> qanday oshirish mumkin</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Amet parturient mauris ut viverra praesent sagittis
+                            velit mi scelerisque. Nascetur a eu nibh amet cras sit ultrices tempor nam. Cras nunc
+                            vulputate facilisis donec magnis hac in ut enim. Tristique a nibh pharetra at.</p>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <!-- 1 -->
+                                <div class="swiper-slide">
+                                    <div class="box">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec
+                                            pellentesque. </p>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="swiper-slide">
+                                    <div class="box">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec
+                                            pellentesque. </p>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="swiper-slide">
+                                    <div class="box">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec
+                                            pellentesque. </p>
+                                    </div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="swiper-slide">
+                                    <div class="box">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Ultrices tristique ut nec
+                                            pellentesque. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper end -->
+                    </div>
+                </div>
+                <!-- right-side -->
+                <div class="col-12 col-xl-4">
+                    <div class="right-side">
+                        <form class="form">
+                            <h3>Chegirmangizni saqlash uchun so'rov qoldiring</h3>
+                            <input class="form-control" type="text" placeholder="Ismingiz">
+                            <input class="form-control" type="number" placeholder="yoshingiz">
+                            <input class="form-control" type="number" placeholder="telefon raqamingiz">
+                            <div class="text-center">
+                                <button type="submit" class="my-button">So'rov qoldiring</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
